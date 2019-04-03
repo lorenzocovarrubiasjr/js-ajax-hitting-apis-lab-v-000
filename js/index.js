@@ -19,6 +19,9 @@ function getCommits(el) {
   const req = new XMLHttpRequest();
   req.addEventListener('load', displayCommits);
   req.open('GET', 'https://api.github.com/repos/' + name + '/commits');
+  console.log(name);
+  console.log("Hello");
+  console.log(el);
   req.send();
 }
 
